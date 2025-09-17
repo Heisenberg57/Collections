@@ -1,11 +1,11 @@
 import java.util.*;
 
-public class Student {
+public class FalseNine {
     private int id;
     private String name;
     private int marks;
 
-    public Student(int id,String name,int marks){
+    public FalseNine(int id, String name, int marks){
         this.id=id;
         this.name=name;
         this.marks=marks;
@@ -28,22 +28,22 @@ public class Student {
     }
 
     public static void main(String[] args) {
-        List<Student> students = new ArrayList<>();
-        students.add(new Student(521,"Thomas Muller",75));
-        students.add(new Student(522,"Lionel Messi",100));
-        students.add(new Student(523,"Roberto Firmino",75));
-        students.add(new Student(524,"Franceso Totti",85));
-        students.add(new Student(525,"Dennis Bergkmap",90));
+        List<FalseNine> students = new ArrayList<>();
+        students.add(new FalseNine(521,"Thomas Muller",75));
+        students.add(new FalseNine(522,"Lionel Messi",100));
+        students.add(new FalseNine(523,"Roberto Firmino",75));
+        students.add(new FalseNine(524,"Franceso Totti",85));
+        students.add(new FalseNine(525,"Dennis Bergkmap",90));
 
         System.out.println("Students in List");
 
-        for(Student s:students){
+        for(FalseNine s:students){
             System.out.println(s);
         }
         System.out.println();
 
         Map<Integer,String> studentMap = new HashMap<>();
-        for(Student s:students){
+        for(FalseNine s:students){
             studentMap.put(s.getId(),s.getName());
         }
 
@@ -54,7 +54,7 @@ public class Student {
         System.out.println();
 
         Set<Integer> uniqueMarks = new HashSet<>();
-        for(Student s:students){
+        for(FalseNine s:students){
             uniqueMarks.add(s.getMarks());
         }
 
